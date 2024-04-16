@@ -1,27 +1,23 @@
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    info title
-    info underline
-
-    info "OS" distro
-    info "Host" model
-    info "Kernel" kernel
-    info "Uptime" uptime
-    info "Packages" packages
-    info "Shell" shell
-    info "Resolution" resolution
-    info "DE" de
-    info "WM" wm
-    info "WM Theme" wm_theme
-    info "Theme" theme
-    info "Icons" icons
-    info "Terminal" term
-    info "Terminal Font" term_font
-    info "CPU" cpu
-    info "GPU" gpu
-    info "Memory" memory
-
+    # info title
+    # info underline
+    
+    prin "$(color 1)A N I M E | L I N U X"
+    prin "──────────────────────"
+    prin ""
+    info "$(color 1) " users
+    info "$(color 2) " distro
+    info "$(color 3)󰍹 " de
+    # info "  " wm
+    info "$(color 4) " shell
+    info " " term
+    info "$(color 6)󱑀 " uptime
+	info "$(color 5) " packages
+    info "$(color 7) " memory
+    info "$(color 10) " cpu
+    info "$(color 9)󰊖 " gpu
     # info "GPU Driver" gpu_driver  # Linux/macOS only
     # info "CPU Usage" cpu_usage
     # info "Disk" disk
@@ -31,10 +27,12 @@ print_info() {
     # [[ "$player" ]] && prin "Music Player" "$player"
     # info "Local IP" local_ip
     # info "Public IP" public_ip
-    # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
 
-    info cols
+    # info cols
+    prin ""
+    prin "$(color 1) $(color 2)  $(color 3)   $(color 4)  $(color 5)  $(color 6)  $(color 7)  $(color 8)  $(color 9)"
+    prin ──────────────────────
 }
 
 # Title
@@ -73,7 +71,7 @@ kernel_shorthand="on"
 # Values:   'on', 'tiny', 'off'
 # Flag:     --distro_shorthand
 # Supports: Everything except Windows and Haiku
-distro_shorthand="off"
+distro_shorthand="tiny"
 
 # Show/Hide OS Architecture.
 # Show 'x86_64', 'x86' and etc in 'Distro:' output.
@@ -86,7 +84,6 @@ distro_shorthand="off"
 # on:  'Arch Linux x86_64'
 # off: 'Arch Linux'
 os_arch="on"
-
 
 # Uptime
 
@@ -144,7 +141,7 @@ memory_unit="mib"
 # on:   '998 (pacman), 8 (flatpak), 4 (snap)'
 # tiny: '908 (pacman, flatpak, snap)'
 # off:  '908'
-package_managers="on"
+package_managers="off"
 
 
 # Shell
@@ -195,7 +192,7 @@ speed_type="bios_limit"
 # Example:
 # on:    'i7-6500U (4) @ 3.1GHz'
 # off:   'i7-6500U (4) @ 3.100GHz'
-speed_shorthand="off"
+speed_shorthand="on"
 
 # Enable/Disable CPU brand in output.
 #
@@ -206,7 +203,7 @@ speed_shorthand="off"
 # Example:
 # on:   'Intel i7-6500U'
 # off:  'i7-6500U (4)'
-cpu_brand="on"
+cpu_brand="off"
 
 # CPU Speed
 # Hide/Show CPU speed.
@@ -264,7 +261,7 @@ cpu_temp="off"
 # Example:
 # on:  'AMD HD 7950'
 # off: 'HD 7950'
-gpu_brand="on"
+gpu_brand="off"
 
 # Which GPU to display
 #
@@ -347,7 +344,8 @@ gtk3="on"
 # Default: 'http://ident.me'
 # Values:  'url'
 # Flag:    --ip_host
-public_ip_host="http://ident.me"
+#public_ip_host="http://ident.me"
+
 
 # Public IP timeout.
 #
@@ -563,7 +561,7 @@ underline_char="-"
 # Example:
 # separator="->":   'Shell-> bash'
 # separator=" =":   'WM = dwm'
-separator=":"
+separator=""
 
 
 # Color Blocks
@@ -694,7 +692,7 @@ disk_display="off"
 # Values:   'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off',
 #           'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
 # Flag:     --backend
-image_backend="ascii"
+image_backend="kitty"
 
 # Image Source
 #
@@ -708,8 +706,8 @@ image_backend="ascii"
 # NOTE: 'auto' will pick the best image source for whatever image backend is used.
 #       In ascii mode, distro ascii art will be used and in an image mode, your
 #       wallpaper will be used.
-image_source="auto"
-
+#image_source="auto"
+image_source="${HOME}/.config/neofetch/images/2b.png"
 
 # Ascii Options
 
@@ -792,7 +790,7 @@ ascii_bold="on"
 # Default:  'off'
 # Values:   'on', 'off'
 # Flag:     --loop
-image_loop="off"
+image_loop="on"
 
 # Thumbnail directory
 #
@@ -826,14 +824,14 @@ crop_offset="center"
 # Values:  'auto', '00px', '00%', 'none'
 # Flags:   --image_size
 #          --size
-image_size="auto"
+image_size="300px"
 
 # Gap between image and text
 #
 # Default: '3'
 # Values:  'num', '-num'
 # Flag:    --gap
-gap=3
+gap=4
 
 # Image offsets
 # Only works with the w3m backend.

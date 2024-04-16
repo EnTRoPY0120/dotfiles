@@ -30,8 +30,8 @@ bindsym $mod+x exec --no-startup-id ~/.config/rofi/scripts/powermenu_t6
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #  output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-   output * bg ~/.config/sway/wallpaper/wallhaven-1pwez3.png fill 
-exec_always --no-startup-id ~/.config/sway/dynamic_wallpaper.sh $
+   output * bg ~/.config/sway/wallpaper/succulent.png fill 
+# exec_always --no-startup-id ~/.config/sway/dynamic_wallpaper.sh $
 #
 # Example configuration:
 #
