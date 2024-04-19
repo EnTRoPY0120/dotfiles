@@ -223,3 +223,20 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+
+# MY STUFF------------------------------------------------------------------------------
+
+# Gaps And No Borders:
+gaps inner 10
+gaps outer 10 
+default_border none
+default_floating_border none
+#font pango:monospace 10
+titlebar_padding 1
+titlebar_border_thickness 0
+
+#bar {
+#	swaybar_command waybar
+#}
+
