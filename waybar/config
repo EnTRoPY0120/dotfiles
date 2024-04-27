@@ -2,7 +2,7 @@
     "height": 33, // Waybar height (to be removed for auto height)
     "spacing": 8, // Gaps between modules (4px)
     "modules-left": ["sway/workspaces"],
-    "modules-right": ["pulseaudio", "network", "clock"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock"],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -11,9 +11,9 @@
             "locked": "",
             "unlocked": ""
         }
-    },	
+    },
     "tray": {
-         //"icon-size": 21,
+        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
@@ -50,7 +50,7 @@
         "format": "{capacity}% {icon} ",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format-alt": "{time} {icon} ",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
