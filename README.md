@@ -4,7 +4,7 @@ This directory contains the dotfiles for my system
 
 ## Requirements
 
-Ensure you have the following installed on your system
+Ensure you have the following packages installed on your system
 
 ### Git
 
