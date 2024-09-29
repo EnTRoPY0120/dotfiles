@@ -9,7 +9,14 @@ Ensure you have the following packages installed on your system
 ### Git
 
 ```
+# Arch Linux
 pacman -S git
+
+# Fedora
+dnf install git
+
+# Debian
+apt install git
 ```
 
 ### Stow
