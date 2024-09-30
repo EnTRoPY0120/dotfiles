@@ -22,7 +22,14 @@ apt install git
 ### Stow
 
 ```
+# Arch Linux
 pacman -S stow
+
+# Fedora
+dnf install stow
+
+# Debian
+apt install stow
 ```
 
 ## Installation
