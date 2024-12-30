@@ -71,6 +71,7 @@ ZSH_THEME="alanpeabody"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    docker
     git
     zsh-autosuggestions
     gitfast
@@ -114,6 +115,7 @@ alias k=kubectl
 alias ga="git add"
 alias gc="git commit"
 alias gr="git remote"
+alias pwgen="pwgen -c -v -n -s -B -C"
 
 export EDITOR=nvim
 export VISUAL=nvim
