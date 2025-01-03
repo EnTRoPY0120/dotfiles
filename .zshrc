@@ -116,6 +116,7 @@ alias ga="git add"
 alias gc="git commit"
 alias gr="git remote"
 alias pwgen="pwgen -c -v -n -s -B -C"
+alias gtop="sudo intel_gpu_top"
 
 export EDITOR=nvim
 export VISUAL=nvim
