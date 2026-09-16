@@ -37,7 +37,7 @@ apt install stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com:EnTRoPY0120/dotfiles.git
+$ git clone git@github-entropy:EnTRoPY0120/dotfiles.git
 $ cd dotfiles
 ```
 
