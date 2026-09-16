@@ -5,9 +5,8 @@
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.yaml"
   ],
-  "install_version": 7,
   "news": {
-    "NEWS.md": "11866"
+    "NEWS.md": "3314"
   },
-  "version": 8
+  "version": 3
 }
